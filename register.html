@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> StudyChan.Ai | Register </title>
+  <link rel="stylesheet" type="text/css" href="/sat_4/Style_Files/register log.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="form-wrapper sign-in">
+        <form action="/sat_4/Back_End_Files/register_tr.php" method="post">
+            <h2>Kayıt Ol</h2>
+            <div class="input-group">
+              <input type="text" name="username" required>
+              <label for="">Kullanıcı Adı</label>
+            </div>
+            <div class="input-group">
+              <input type="email" name="email" required>
+              <label for="">e-posta</label>
+            </div>
+            <div class="input-group">
+              <input type="password" name="password" required>
+              <label for="">şifre</label>
+            </div>
+            <div class="remember">
+              <label>Dil Seçeneği : </label>
+              <label><input type="radio" name="Türkçe"> Türkçe  </label>
+              <label><input type="radio" name="English"> English </label>
+            </div>
+            <button type="submit" name="submit">Kayıt Ol</button>
+            <div class="signUp-link">
+                <p>Zaten bir hesaba sahip misiniz ?  <a href="/sat_4/Front_End_Files/login.html">Giriş Yap ! </a></p>
+              <p><a href="#" class="enBtn-link">Countinue in English ! </a></p>
+            </div>
+          </form>
+    </div>
+
+    <div class="form-wrapper sign-up">
+      <form action="/sat_4/Back_End_Files/register_en.php" method="post">
+        <h2>Sign Up</h2>
+        <div class="input-group">
+          <input type="text" name="username" required>
+          <label for="">Username</label>
+        </div>
+        <div class="input-group">
+          <input type="email" name="email" required>
+          <label for="">Email</label>
+        </div>
+        <div class="input-group">
+          <input type="password" name="password" required>
+          <label for="">Password</label>
+        </div>
+
+        <div class="remember">
+          <label><input type="checkbox" name="accept"> I agree to the terms & conditions</label>
+        </div>
+        <button type="submit" name="submit">Sign Up</button>
+        <div class="signUp-link">
+            <p>Already have an account? <a href="/sat_4/Front_End_Files/login.html">Sign In</a></p>
+          <p><a href="#" class="trBtn-link">Türkçe Devam Et ! </a></p>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="/sat_4/Back_End_Files/language.js"></script>
+</body>
+</html>

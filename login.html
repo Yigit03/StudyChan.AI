@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> StudyChan.Ai | Login </title>
+  <link rel="stylesheet" type="text/css" href="/sat_4/Style_Files/login.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="form-wrapper sign-in">
+      <form action="/sat_4/Back_End_Files/login_tr.php" method="post">
+        <h2>Giriş</h2>
+        <div class="input-group">
+          <input type="text" name="email" required>
+          <label for="">e-posta</label>
+        </div>
+        <div class="input-group">
+          <input type="password" name="password" required>
+          <label for="">şifre</label>
+        </div>
+        <div class="remember">
+          <label><input type="checkbox" name="accept"> Beni Hatırla </label>
+        </div>
+        <button type="submit" name="submit">Giriş</button>
+        <div class="signUp-link">
+          <p>Bir Hesabınız Yok Mu ? <a href="/sat_4/Front_End_Files/register.html">Kayıt Ol !</a></p>
+          <p style="margin-top: 30px;"><a href="#" class="enBtn-link"><b>Continue in English</b></a></p>
+        </div>
+      </form>
+    </div>
+    <div class="form-wrapper sign-up">
+        <form action="/sat_4/Back_End_Files/login_en.php" method="post">
+            <h2>Sign In</h2>
+            <div class="input-group">
+              <input type="text" name="email" required>
+              <label for="">e-mail</label>
+            </div>
+            <div class="input-group">
+              <input type="password" name="password" required>
+              <label for="">password</label>
+            </div>
+            <div class="remember">
+              <label><input type="checkbox" name="accept"> Remember Me</label>
+            </div>
+            <button type="submit" name="submit">Login</button>
+            <div class="signUp-link">
+              <p>Don`t have an account ?  <a href="/sat_4/Front_End_Files/register.html" >Sıgn Up!</a></p>
+              <p style="margin-top: 30px;"><a href="#" class="trBtn-link">Türkçe Devam Et </a></p>
+            </div>
+          </form>
+    </div>
+  </div>
+  <script src="/sat_4/Back_End_Files/language.js"></script>
+</body>
+</html>
